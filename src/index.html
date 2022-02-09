@@ -16,8 +16,8 @@
 
   <script>
     (async function() {
-        const { text } = await( await fetch(`/api/VinnyFunc`)).json();
-        document.querySelector('#name').textContent = text;
+        var response = await( await fetch(`/api/VinnyFunc`));
+        document.querySelector('#name').textContent = response;
     }())
   </script>
  </body>
